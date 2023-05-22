@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="306.9" tests="15" skipped="0" failures="2" errors="0">
+<testcase classname="Navigate between cards and Home page" name="Navigate to 'Popular Make' page and return back to home page" time="39.94">
+<failure type="java.lang.AssertionError" message="Home Page is not displayed">
+<![CDATA[java.lang.AssertionError: Home Page is not displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pageobjects.HomePage.verifyHomePageIsDisplayed(HomePage.java:124)
+	at stepdefinitions.NavigationSteps.user_is_navigated_back_to_home_page(NavigationSteps.java:64)
+	at ✽.User is navigated back to Home page(file:///D:/workspace/BuggyCarsAutomation/src/test/resources/features/Navigation.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User clicks on Popular Make card......................................passed
+When User clicks on Popular Make page header................................passed
+Then User is navigated back to Home page....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Navigate between cards and Home page" name="Navigate to 'Popular Model' page and return back to home page" time="8.836">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User clicks on Popular Model card.....................................passed
+When User clicks on Popular Model page header...............................passed
+Then User is navigated back to Home page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigate between cards and Home page" name="Navigate to 'Overall Rating' page and return back to home" time="8.561">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User clicks on Overall Rating card....................................passed
+When User clicks on Overall Rating page header..............................passed
+Then User is navigated back to Home page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Overall Rating page functionality" name="Verify page next button is disabled in the pagination once user reaches last page" time="42.93">
+<failure type="java.lang.AssertionError" message="Next page button is not disabled">
+<![CDATA[java.lang.AssertionError: Next page button is not disabled
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at pageobjects.OverallRatingPage.verifyNextPageButtonStatus(OverallRatingPage.java:136)
+	at stepdefinitions.OverallRatingSteps.page_next_button_should_be_disabled(OverallRatingSteps.java:41)
+	at ✽.Page Next button should be disabled(file:///D:/workspace/BuggyCarsAutomation/src/test/resources/features/OverallRating.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User navigates to Overall Rating page.................................passed
+When User goes to last page of the cars list from pagination................passed
+Then Page Next button should be disabled....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Overall Rating page functionality" name="Verify user can navigate to Car Make pages from Overall rating page - Example #1.1" time="22.13">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User navigates to Overall Rating page.................................passed
+When User selects the "Make" name "Alfa Romeo"..............................passed
+Then User should be navigated to Make "Alfa Romeo" page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Overall Rating page functionality" name="Verify user can navigate to Car Make pages from Overall rating page - Example #1.2" time="31.51">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User navigates to Overall Rating page.................................passed
+When User selects the "Make" name "Pagani"..................................passed
+Then User should be navigated to Make "Pagani" page.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Overall Rating page functionality" name="Verify user can navigate to Car Model pages from Overall rating page - Example #1.1" time="21.583">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User navigates to Overall Rating page.................................passed
+When User selects the "Model" name "Guilia Quadrifoglio"....................passed
+Then User should be navigated to Model "Guilia Quadrifoglio" page...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Overall Rating page functionality" name="Verify user can navigate to Car Model pages from Overall rating page - Example #1.2" time="43.309">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+Given User navigates to Overall Rating page.................................passed
+When User selects the "Model" name "Huayra".................................passed
+Then User should be navigated to Model "Huayra" page........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Update the user profile" name="Verify user can make Profile changes and Save them sucessfully" time="16.469">
+<system-out><![CDATA[
+Given User logged into the application......................................passed
+And Profile option is displayed on the Home page............................passed
+When User clicks on Profile button..........................................passed
+Then User should be able to update profile..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login Validation" name="Verify registration of user with valid data" time="11.347">
+<system-out><![CDATA[
+Given User is on register page..............................................passed
+When User enters all the required details...................................passed
+And Click on Register button................................................passed
+Then User should be registered successfully.................................passed
+And User should login with registered credentials successfully..............passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login Validation" name="Verify registrating an existing user" time="7.142">
+<system-out><![CDATA[
+Given User is on register page..............................................passed
+When User enters all the required details...................................passed
+And Click on Register button................................................passed
+Then User already exits error is shown......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login Validation" name="Verify login and logout with valid credentials - Example #1.1" time="7.321">
+<system-out><![CDATA[
+Given User enters username "testuser2023" and password "Welcome123!"........passed
+When User clicks on Login button............................................passed
+Then User should be logged in successfully..................................passed
+And User logs out successfully..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login Validation" name="Verify login and logout with valid credentials - Example #1.2" time="6.939">
+<system-out><![CDATA[
+Given User enters username "testuser1005" and password "Welcome@1234".......passed
+When User clicks on Login button............................................passed
+Then User should be logged in successfully..................................passed
+And User logs out successfully..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration and Login Validation" name="Verify login with invalid credentials - Example #1.1" time="5.92">
+<system-out><![CDATA[
+Given User enters username "invalidtestuser" and password "Welcome123!".....passed
+When User clicks on Login button............................................passed
+Then User login should fail with error message..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Popular Model page features" name="Popular Model page - Vote and comment" time="32.384">
+<system-out><![CDATA[
+Given User navigates to Register page.......................................passed
+And User registers successfully.............................................passed
+When User logs into the application.........................................passed
+And navigate to Popular Model page..........................................passed
+Then User should be able to vote............................................passed
+And User comments should be updated in the table............................passed
+]]></system-out>
+</testcase>
+</testsuite>
