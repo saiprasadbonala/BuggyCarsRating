@@ -8,11 +8,6 @@ This is a BDD based cucumber automation framework built using Java & Selenium to
 4. JUnit 4.13.2
 5. Eclipse IDE 
 
-# Pre-Requisites:
-1. Install 'Cucumber Eclipse Plugin' extension from Eclipse MarketPlace
-2. JDK [Not required explicitly for latest Eclipse versions]
-3. Maven [Not required explicitly for latest Eclipse versions]
-
 # Pre-Requisites/Setup:
 1. Clone the git repository using the command "git clone https://github.com/saiprasadbonala/BuggyCarsRating.git"
 2. Open the project using Eclipse IDE
@@ -20,7 +15,7 @@ This is a BDD based cucumber automation framework built using Java & Selenium to
 4. JDK (Not required explicitly for latest Eclipse versions)
 5. Maven (Not required explicitly for latest Eclipse versions)
 6. Build the project and make sure the build path for JRE is set to 1.8 or above
-7. If observed any build issues, click on Project tab > Select 'Update Maven Project' option and perform the Step-3 again
+7. If observed any build issues, click on Project tab > Select 'Update Maven Project' option and perform the Step-6 again
 
 # How to Run tests and check results?
 1. From 'src/test/java/', open TestRunner.java under runners package
